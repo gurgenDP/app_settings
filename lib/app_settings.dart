@@ -10,6 +10,11 @@ class AppSettings {
     _channel.invokeMethod('wifi');
   }
 
+  /// Future async method call to open Bluetooth settings.
+  static Future<void> openBluetoothSettings() async {
+    _channel.invokeMethod('bluetooth');
+  }
+
   /// Future async method call to open location settings.
   static Future<void> openLocationSettings() async {
     _channel.invokeMethod('location');
